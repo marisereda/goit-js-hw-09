@@ -16,3 +16,66 @@ img {
   display: block;
   max-width: 100%;
 }
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  padding: 20px;
+}
+
+.btnwrap {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+button {
+  width: 100px;
+  height: 50px;
+  cursor: pointer;
+  font-size: 1.5em;
+}
+
+.input-wrap {
+  margin-bottom: 40px;
+}
+
+#datetime-picker {
+  display: inline;
+  width: 250px;
+  height: 40px;
+  font-size: 1.5rem;
+}
+
+.start {
+  display: inline;
+  height: 40px;
+}
+
+.timer {
+  display: flex;
+  font-family: 'Roboto Condensed', sans-serif;
+  gap: 20px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.value {
+  /* display: block; */
+  font-size: 2.5rem;
+  font-weight: bold;
+  position: center;
+}
+
+.label {
+  /* display: block; */
+  text-transform: uppercase;
+}
