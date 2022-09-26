@@ -16,12 +16,8 @@ function onSubmit(event) {
     const position = i + 1;
 
     createPromise(position, delay)
-      .then(result => {
-        Notify.success(result);
-      })
-      .catch(error => {
-        Notify.failure(error);
-      });
+      .then(result => Notify.success(result))
+      .catch(error => Notify.failure(error));
 
     delay += step;
   }
