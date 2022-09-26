@@ -34,7 +34,7 @@ function onStartClick() {
 
   timerID = setInterval(() => {
     let timeRemained = fp.selectedDates[0] - Date.now();
-    // timeRemained = timeRemained - 1000;
+
     if (timeRemained > 0) {
       renderTimer(timeRemained);
     } else {
